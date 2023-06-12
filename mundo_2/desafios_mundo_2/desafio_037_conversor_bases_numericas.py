@@ -12,8 +12,8 @@ if opcao == 1:
     print(f"O número {opcao} em BINARIO É {bin(num)[2:]}.")
     #esse trecho [2:] no código faz com que os dois primeiros caracteres não apareça no código quando quiser que algo não apareça só usar isso
 elif opcao == 2:
-    print(f" O numero {opcao} em OCTAL é {oct(num)}[2:].")
+    print(f" O numero {opcao} em OCTAL é {oct(num)[2:]}.")
 elif opcao == 3:
-    print(f"O número {opcao} em HEXADECIMAL é {hex(num)}[2:].")
+    print(f"O número {opcao} em HEXADECIMAL é {hex(num)[2:]}.")
 else:
     print("Opção inválida tente novamente com uma das opções acima!")
