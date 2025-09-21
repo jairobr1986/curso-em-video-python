@@ -1,4 +1,5 @@
 # Exercício Python 45: Crie um programa que faça o computador jogar Jokenpô com você.
+# Minha rsolução sem ajuda do video
 
 from random import randint
 itens = ("Pedra", "Papel", "Tesoura")
@@ -12,6 +13,7 @@ Escolha:
 [1] PAPEL
 [2] TESOURA
 """))
+
 print(f"JOGADOR escolheu {jogador} e COMPUTADOR escolheu {computador}.")
 print(f"{'':-^28}")
 if computador == 0 and jogador == 0:
@@ -34,5 +36,5 @@ elif computador == 2 and jogador == 1:
     print("COMPUTADOR TESOURA vs PAPEL JOGADOR. \nCOMPUTADOR VENCEU!!!")
 elif computador == 2 and jogador == 0:
     print("COMPUTADOR TESOURA vs PEDRA JOGADOR. \nJOGADOR VENCEU!!!")
-else:
+elif computador >=3 or jogador >= 3:
     print("Digite um número valido.")
