@@ -10,6 +10,7 @@ contador_mulher_menor_20 = 0
 nome_mais_velho = ''
 
 for c in range(1, 5):
+    print(f'-----=>{c}ª ENTRADA: ')
     nome = str(input('Informe o seu nome:')).strip() .upper()
     idade = int(input('Informe sua idade: '))
     sexo = str(input('Informe o sexo com M ou F: ')).strip() .upper()
