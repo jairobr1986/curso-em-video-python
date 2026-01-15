@@ -5,8 +5,8 @@
 
 # minha versão abaixo
 
-contador = 0
-soma = 0
+contador = soma = 0
+
 
 while True:
 
