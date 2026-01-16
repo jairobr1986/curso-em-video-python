@@ -144,3 +144,35 @@ for c in range(1, 11):
 # =============================================================================================
 
 
+
+# chatGPT letras e textos com condições isalpha
+# print(f"{' Cadastro de Portfólio ':=^40}")
+
+# # 1. Validando o Nome (String)
+# # Quase tudo é string, mas podemos validar se não está vazio
+# while True:
+#     nome = input("Digite seu nome: ").strip()
+#     if nome.isalpha(): # Verifica se contém apenas letras
+#         break
+#     print("Erro: O nome deve conter apenas letras e não pode ser vazio.")
+
+# # 2. Validando a Idade (Inteiro) com seu próprio TRY
+# while True:
+#     try:
+#         idade = int(input("Digite sua idade: "))
+#         break # Se converter com sucesso, sai do loop
+#     except ValueError:
+#         # Aqui a mensagem é específica para este campo!
+#         print("Erro: Na idade, você deve digitar apenas números inteiros.")
+
+# # 3. Validando o Salário (Float) com seu próprio TRY
+# while True:
+#     try:
+#         salario = float(input("Digite o salário pretendido: R$ "))
+#         break
+#     except ValueError:
+#         print("Erro: No salário, use apenas números e ponto (ex: 1500.50).")
+
+# print("-" * 40)
+# print(f"Cadastro concluído: {nome}, {idade} anos, R$ {salario:.2f}")
+
