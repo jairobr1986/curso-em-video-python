@@ -16,6 +16,8 @@ nome_produto = None
 preco_produto = 0
 total_gasto = 0
 produto_mais_1000 = 0
+produto_barato = None
+nome_do_produto_barato = None
 
 while True:
     
@@ -31,20 +33,28 @@ while True:
             print(f"{'[error] ! atenção !':=^70}".upper())
             print('*** PRODUTO INVALIDO! *** Esse campo aceita apenas palavras.')
             print('='*70)
+
     while True:
         try:
             print(f'Produto na sacola: {nome_produto}'.upper())
-            preco_produto = float(input('Preço do produto: R$'.upper()))
+            preco_produto = float(input('Preço do produto: R$ '.upper()))
             print('='*70)
-            if preco_produto > 1000:
-                produto_mais_1000 += 1
+
             break
 
         except ValueError:
             print()
-            print(f"{' Atenção informe apenas valores EX: 1500.50':=^70}")
+            print(f"{' Atenção informe apenas valores EX: 1500.50 ':=^70}")
             continue
 
+    if preco_produto > 1000:
+        produto_mais_1000 += 1
+    if produto_barato == None:
+        produto_barato = preco_produto
+    if preco_produto < produto_barato:
+        produto_barato = preco_produto
+        nome_do_produto_barato = nome_produto
+        
     while True:
 
         print(f'Produto na sacola: {nome_produto}'.upper())
@@ -71,9 +81,11 @@ print()
 print(f"{' Programa Finalizado ':=^70}".upper())
 print()
 print('A) qual é o total gasto na compra.'.upper())
-print(f'Total gasto em compras [{total_gasto}]R$.'.upper())
+print(f'Total gasto em compras R$[{total_gasto}].'.upper())
 print()
 print('B) quantos produtos custam mais de R$1000.'.upper())
 print(f'{produto_mais_1000} produto(s) mais de 1000 R$')
 print()
-
+print('C) qual é o nome do produto mais barato.'.upper())
+print(f'O produto com menor valor foi [{nome_do_produto_barato}] custando R$[{produto_barato}]')
+print()
