@@ -1,0 +1,5 @@
+pessoa = ('Gustavo', 39, 'M', 99.88)
+print('='*70)
+print(pessoa)
+print()
+print(sorted(pessoa))
